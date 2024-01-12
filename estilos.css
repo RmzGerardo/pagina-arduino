@@ -1,0 +1,46 @@
+h1{
+    font-size: 30px;
+   
+}
+
+h2{
+    font-size: 40px;
+    margin-top: 20px;
+    font-family: 'Coming Soon', cursive;
+}
+
+
+.p{
+    /* font-family: '8BIT WONDER', sans-serif; */
+    margin-top: 20px;
+    font-family: 'Coming Soon', cursive;
+                                                
+}
+
+
+
+.sombra{
+    -webkit-box-shadow: -26px -32px 26px -17px rgba(0,0,0,0.65);
+-moz-box-shadow: -26px -32px 26px -17px rgba(0,0,0,0.65);
+box-shadow: -26px -32px 26px -17px rgba(0,0,0,0.65);
+
+
+border-radius: 43px 43px 43px 43px;
+-moz-border-radius: 43px 43px 43px 43px;
+-webkit-border-radius: 43px 43px 43px 43px;
+border: 0px solid #000000;
+}
+
+.borde{
+    border-radius: 43px 43px 43px 43px;
+-moz-border-radius: 43px 43px 43px 43px;
+-webkit-border-radius: 43px 43px 43px 43px;
+border: 0px solid #000000;
+}
+
+
+
+footer {
+    margin: 0;
+    padding: 0;
+  }
