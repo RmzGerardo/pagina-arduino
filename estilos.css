@@ -18,7 +18,6 @@ h2{
 }
 
 
-
 .sombra{
     -webkit-box-shadow: -26px -32px 26px -17px rgba(0,0,0,0.65);
 -moz-box-shadow: -26px -32px 26px -17px rgba(0,0,0,0.65);
@@ -39,8 +38,17 @@ border: 0px solid #000000;
 }
 
 
-
-footer {
-    margin: 0;
-    padding: 0;
+.row {
+    margin-bottom: 20px; /* Estilo predeterminado */
+  }
+  
+  /* Media query para pantallas de hasta 600 px de ancho (móviles) */
+  @media only screen and (max-width: 600px) {
+    .row {
+      margin-bottom: 10px; /* Separación de 10 px entre filas para móviles */
+    }
+  
+    .col.m12 {
+      margin-bottom: 10px; /* Separación de 10 px entre columnas para móviles */
+    }
   }
