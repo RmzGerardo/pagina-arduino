@@ -320,7 +320,28 @@
 
 
       
+        <h2>Comentarios para mejorar nuestro nivel.</h2>
 
+  
+
+   <textarea id="userComment" class="nes-textarea"  placeholder="Escribe tu comentario"></textarea>
+
+  <!-- Textarea para escribir el nombre -->
+  <textarea id="userName"  class="nes-textarea" placeholder="Escribe tu nombre"></textarea>
+
+  <!-- Botón para guardar el comentario y nombre -->
+  <button onclick="guardarDatos()" class="nes-btn is-success">Guardar</button>
+
+
+  <!-- Div para mostrar el texto guardado -->
+
+  <div class="row">
+    <div class="col l12">
+      <ul id="savedData" class="p"></ul>
+      <br>
+
+    </div>
+  </div>
         
         
 
@@ -393,6 +414,57 @@
       if (currentScroll > 0) {
         window.requestAnimationFrame(scrollToTop);
         window.scrollTo(0, currentScroll - (currentScroll / 10));
+      }
+    }
+
+
+
+   // Cargar los datos guardados al cargar la página
+   window.onload = function () {
+      cargarDatos('userComment', 'savedData');
+      cargarDatos('userName', 'savedData');
+    }
+
+    // Función para cargar datos guardados desde localStorage
+    function cargarDatos(inputId, outputId) {
+      var textoGuardado = localStorage.getItem(inputId);
+      if (textoGuardado) {
+        document.getElementById(outputId).innerHTML = textoGuardado;
+      }
+    }
+
+    // Función para guardar el comentario y nombre en el DOM y en localStorage
+    function guardarDatos() {
+      // Obtener el contenido del textarea de comentario
+      var comentarioUsuario = document.getElementById('userComment').value;
+
+      // Verificar si hay comentario para evitar guardar cadenas vacías
+      if (comentarioUsuario.trim() !== '') {
+        // Crear un nuevo elemento li para mostrar el comentario guardado
+        var nuevoComentario = document.createElement('li');
+        nuevoComentario.className = 'entry';
+        nuevoComentario.textContent = comentarioUsuario;
+
+        // Obtener el contenido del textarea de nombre
+        var nombreUsuario = document.getElementById('userName').value;
+
+        // Crear un nuevo elemento li para mostrar el nombre junto con el comentario
+        var nuevoNombre = document.createElement('li');
+        nuevoNombre.className = 'entry';
+        nuevoNombre.textContent = "~ " + nombreUsuario + " ~";
+
+        // Agregar los nuevos elementos a la lista existente
+        var contenedorTexto = document.getElementById('savedData');
+        contenedorTexto.appendChild(nuevoComentario);
+        contenedorTexto.appendChild(nuevoNombre);
+
+        // Limpiar el contenido de ambos textareas
+        document.getElementById('userComment').value = '';
+        document.getElementById('userName').value = '';
+
+        // Guardar los datos en localStorage
+        localStorage.setItem('userComment', contenedorTexto.innerHTML);
+        localStorage.setItem('userName', contenedorTexto.innerHTML);
       }
     }
 
