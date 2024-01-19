@@ -33,7 +33,7 @@
     <header>
   
           <nav>
-            <div class="nav-wrapper blue lighten-2">
+            <div class="nav-wrapper indigo">
               <a href="index.html" class="brand-logo"><img src="img/microcontrolador.png" alt="LOGO" class="logo"></a>
               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
               <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -62,19 +62,41 @@
         <div class="container">
           <div class="row">
             <div class="col s12 m12">
-              <div class="card blue-grey darken-1 borde">
-                <div class="card-content white-text">
-                <span class="card-title">Proyecto Cerradura con Arduino</span>
-                  <p>Quisimos hacer una solucion casera para poder proteger nuestras pertenecias con ayuda de la 
-                    electronica y la programacion, para ello se nos ocurrio hacer una cerradura casera con ayuda de un
-                    arduino,un servo motor y sensor ultrasonico, el cual se activa con un codigo que se ingresa por medio de un teclado
-                    numerico, el cual se puede cambiar en cualquier momento.</p>
-                  </p>
-                </div>
-                <div class="card-action">
+
+              <div class="nes-container is-rounded is-dark">
+                <p class="p">El principio con el cual se concibe el dispositivo construido, es el de una caja de seguridad que con el uso de la tecnología y la electrónica, facilite el resguardo de bienes de cualquier índole, y que permita la apertura por medio de autenticación
+                   (código numérico) para que solo el poseedor de dicho código pueda acceder al contenido. 
+                  <br> <br>
+                  Por otro lado, el funcionamiento del dispositivo es relativamente simple y permite la apertura de la puerta por medio de la validación de un código númerico. Esté código númerico permite el uso de hasta 16 caracteres con lo que las posibles combinaciones para crear el código de apertura son de aproximadamente 21,000 millones.
+                </p>
                   <a href="https://docs.google.com/document/d/18j4Iz7p1lV2krvW5MBhxvlmx8PqOXHlo/edit?usp=sharing&ouid=108573282169252137089&rtpof=true&sd=true">Documentacion PDF</a>
-                </div>
               </div>
+            </div>
+          </div>
+
+
+
+                  <!-- Modal Trigger -->
+          <a class="modal-trigger nes-btn is-error" href="#modal1">¿Como se hizo la pagina?</a>
+
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <h4>JavaScript y Html</h4>
+              <p>Con el tiempo encima, se hizo la pagina sobre HTML,CSS y JS, es una SinglePage solo para documentar lo basico del proyecto. <br>
+                Con el tiempo, se podria relizar la pagina con Angular o React, para que sea mas dinamica y con mas contenido. <br>
+                Se utilizo Materialize para el diseño de la pagina, asi como el framework de Material Design para el diseño de la pagina. <br>
+                <!-- explica que la pagina solo es de informacion -->
+                La pagina solo sirve para documentar el proyecto, no es una pagina de venta o de informacion, solo es para documentar el proyecto.
+               <br>
+                <i class="nes-icon is-large star"></i>
+                <i class="nes-icon is-large star is-half"></i>
+              
+
+              </p>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
             </div>
           </div>
 
@@ -87,11 +109,14 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Gerardo Ramirez<i class="material-icons right">more_vert</i></span>
-                  <p><a href="https://github.com/RmzGerardo">Portafolio Gihub</a></p>
+                  <p><a href="https://github.com/RmzGerardo" target="_blank">Portafolio Gihub</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Desarrollador FrontEnd<i class="material-icons right">close</i></span>
-                  <p>Soy un Desarrollador de Software con +9 meses de experiencia, realizando proyectos con REACT y ANGULAR, asi mismo con Python. Tengo experiencia en Soporte, Redes y Bases de Datos.</p>
+                  <p> <br>Soy un Desarrollador de Software con +9 meses de experiencia, realizando proyectos con REACT y ANGULAR, asi mismo con Python. 
+                    Soporte, Redes cisco a nivel intermedio y Administracion de Datos con SQL. <br>
+                    Me gusta demasiado el desarrollo de paginas, y actualmente estudio para ser FullStack Developer. Y en un futuro tambien sea desarrollador Movil con React Native.<br>
+                  </p>
                 </div>
               </div>
             </div>
@@ -103,11 +128,14 @@
                 </div>
                 <div class="card-content">
                   <span class="card-title activator grey-text text-darken-4">Julio Cesar<i class="material-icons right">more_vert</i></span>
-                  <p><a href="#">Portafolio</a></p>
+                  <p><a href="#" target="_blank">Portafolio</a></p>
                 </div>
                 <div class="card-reveal">
                   <span class="card-title grey-text text-darken-4">Ingeniero de Sistemas<i class="material-icons right">close</i></span>
-                  <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  <p>Soporte técnico 2 y 3 nível. Informático con 20 años de experiencia en administración de sistemas informáticos e infraestructura, 
+                    sistemas operativos de la familia windows (server, thin client, client) IIS, Apache, sistemas de monitoreo (zabbix, solarwinds) sistemas 
+                    operativos linux, unix, MSSQL, Oracle, MySQL, MariaDB, administración SAP sistema de gestión hospitalaria, sistemas de gestión ISO 27000, ITIL, 
+                    ITAM, ITSM.</p>
                 </div>
               </div>
             </div>
@@ -119,7 +147,7 @@
 
           <div class="row" id="documentacion">
             <div class="col l12">
-              <h2>Evidencias del codigo y explicacion</h2>
+              <h2>Evidencias del codigo y Descripción</h2>
             </div>
           </div>
 
@@ -162,14 +190,40 @@
 
 
           <div class="nes-container with-title is-centered">
-            <p class="title">Explicacion del proyecto</p>
-            <p>Contamos un kit intermedio de arduino, con eso nos dio armas para poder realizar la cerradura. Nuestra principal herramienta son los servomotores, que con medios caseros haremos una palanca para que la puerta no se pueda abrir. <br>
+            <p class="title">Descripción del proyecto</p>
+            <p class="p">Contamos un kit intermedio de arduino, con eso nos dio armas para poder realizar la cerradura. Nuestra principal herramienta son los servomotores, que con medios caseros haremos una palanca para que la puerta no se pueda abrir. <br>
             La caja la hicimos de madera de 2 pulgadas, esta caja nos servira para meter todo tipo de cosas personales. <br>
             Diran ¿Que resueve esto?, pues cuando no hay la privacidad en casa o con la pareja, y con medios caseros (obviamente con conociemientos de programacion) puedes realizar esto. Por medio de un pin o contraseña, puedes abrir la cerradura, o si lo quieres facil, con un sensor ultrasonico.
               <br> <br>
             El codigo, es una mezcla de varios proyectos individuales que se hicieron para que funcionara por separado y despues juntarlos.
+            <br> <br>
+            Todo comenzó con la idea de crear un casco de IRON MAN con movimiento mecanico, que respondiera a comandos de movimiento para la apertura y cierre de la máscara, como proyecto de evaluación final para la asignatura de Sistemas Digitales, por lo que tras realizar la investigación correspondiente, se decide descartar el proyecto (el costo de manufactura de las piezas necesarias para el armado del caso es considerablemente alto). Tras la valoración de varios elementos necesarios,
+            se decide cambiar el enfoque del proyecto por algún dispositivo que tuviera alguna utilidad y aplicación en el día a día de los usuarios por lo que tras descartar la idea inicial, se comienza a trabajar en el diseño del dispositivo a construir.
+            Se decide abordar una problemática doméstica de cierta recurrencia en la que es necesario preservar las pertenencias personales, por lo que se planifica la construcción de una caja de seguridad que permita al propietario el mantener a resguardo cualquier elemento pequeño (monedas, billetes, teléfonos celulares y etc).
             </p>
           </div>
+
+<br>
+          <div class="row">
+            <div class="col l12">
+                <div class="nes-container with-title is-centered">
+                <div class="lists">
+                  <ul class="nes-list is-disc">
+                    <h2>Lista de elementos</h2>
+                    <br>
+                    <li>ServoMotores.</li>
+                    <li>Teclado 4x4.</li>
+                    <li>Sensor Ultrasinico</li>
+                    <li>Jumers.</li>
+                    <li>Arduino Uno.</li>
+                    <li>Proto.</li>
+                    <li>LCD 16X2.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <br>
           <section class="nes-container is-dark">
@@ -273,7 +327,7 @@
         
    
 
-
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kVLblSH-8aI?si=7AOowznmwWkQjjZD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
     </main>
@@ -284,7 +338,7 @@
     
 
 
-    <footer class="page-footer blue">
+    <footer class="page-footer indigo">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
