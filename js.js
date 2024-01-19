@@ -8,3 +8,12 @@ document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
+
+  M.toast({html: '¿Hola como estas?'})
+  M.toast({html: 'Espero te guste la pagina!!'})
+
+// Or with jQuery
+
+$(document).ready(function(){
+  $('.collapsible').collapsible();
+});

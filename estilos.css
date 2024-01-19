@@ -14,7 +14,7 @@ h2{
     /* font-family: '8BIT WONDER', sans-serif; */
     margin-top: 20px;
     font-family: 'Coming Soon', cursive;
-                                                
+    font-style: bold;                                         
 }
 
 
@@ -37,6 +37,11 @@ border: 0px solid #000000;
 border: 0px solid #000000;
 }
 
+.logo{
+
+  margin-left: 10px;
+}
+
 
 .row {
     margin-bottom: 20px; /* Estilo predeterminado */
@@ -51,4 +56,23 @@ border: 0px solid #000000;
     .col.m12 {
       margin-bottom: 10px; /* Separación de 10 px entre columnas para móviles */
     }
+  }
+
+  body {
+    height: 1500px; /* Para simular contenido largo y permitir probar el botón de volver arriba */
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  #scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #f84a05c2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
   }
