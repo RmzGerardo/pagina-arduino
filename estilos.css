@@ -43,20 +43,19 @@ border: 0px solid #000000;
 }
 
 
-.row {
-    margin-bottom: 20px; /* Estilo predeterminado */
+/* .row {
+    margin-bottom: 20px; 
   }
   
-  /* Media query para pantallas de hasta 600 px de ancho (móviles) */
   @media only screen and (max-width: 600px) {
     .row {
-      margin-bottom: 10px; /* Separación de 10 px entre filas para móviles */
+      margin-bottom: 10px; 
     }
   
     .col.m12 {
-      margin-bottom: 10px; /* Separación de 10 px entre columnas para móviles */
+      margin-bottom: 10px; 
     }
-  }
+  } */
 
   body {
     height: 1500px; /* Para simular contenido largo y permitir probar el botón de volver arriba */
